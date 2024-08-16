@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const indexRouter = require("./routes/indexRouter");
+require("dotenv").config()
 
 const socketIO = require("socket.io")
 const http = require("http")
@@ -61,4 +62,8 @@ io.on("connection", (socket) => {
 
 app.use("/", indexRouter);
 
-server.listen(8000);
+const PORT = process.env.PORT || 8000;
+
+server.listen(PORT, ()=>{
+    console.log(`Server is running on ${PORT}`); 
+});

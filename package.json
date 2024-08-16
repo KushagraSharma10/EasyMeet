@@ -8,9 +8,11 @@
     "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css"
   },
   "keywords": [],
-  "author": "", 
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.12",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "socket.io": "^4.7.5"
