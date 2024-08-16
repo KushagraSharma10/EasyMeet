@@ -814,6 +814,18 @@ video {
   font-family: "Plus Jakarta Sans";
 }
 
+@font-face {
+  font-family: "Plus Jakarta Sans";
+
+  src: url("../fonts/PlusJakartaSans-Regular.woff");
+}
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+
+  src: url("../fonts/PlusJakartaSans-Regular.woff2");
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
